@@ -21,26 +21,26 @@ End the program and close the output image windows.
 
 ## Program:
 ~~~
-Developed By: Thirugnanamoorthi G
-Register Number : 212221230117
+Developed By: Mohan Raj S
+Register Number : 212221230065
 ~~~
 ## i) To Read and Display the image:
 ~~~
 import cv2
-color= cv2.imread('tiger.jpg',-1)
-cv2.imshow('Thirugnanamoorthi 212221230117',color)
+color= cv2.imread('bike.jpg',-1)
+cv2.imshow('Mohan Raj S 212221230065',color)
 cv2.waitKey(0)
 ~~~
 ## ii) To Write the image:
 ~~~
 import cv2
-color= cv2.imread('tiger.jpg',-1)
-cv2.imwrite('tiger.jpg',color)
+color= cv2.imread('bike.jpg',-1)
+cv2.imwrite('bike.jpg',color)
 ~~~
 ## iii) Find the Shape of the Image:
 ~~~
 import cv2
-color=cv2.imread('tiger.jpg',1)
+color=cv2.imread('bike.jpg',1)
 print(color.shape)
 ~~~
 
@@ -48,20 +48,20 @@ print(color.shape)
 ~~~
 import cv2
 import random
-img= cv2.imread('tiger.jpg',-1)
+img= cv2.imread('bike.jpg',-1)
 for i in range(150):
     for j in range(img.shape[1]):
         img[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
-cv2.imshow('Thirugnanamoorthi 212221230117',img)
+cv2.imshow('Mohan Raj S 212221230065',img)
 cv2.waitKey(0)
 ~~~
 ## v) To Cut and Paste portion of image:
 ~~~
 import cv2
-img= cv2.imread('tiger.jpg',-1)
+img= cv2.imread('bike.jpg',-1)
 new = img[200:450,200:450]
 img[150:400,150:400] = new
-cv2.imshow('Thirugnanamoorthi 212221230117',img)
+cv2.imshow('Mohan Raj S 212221230065',img)
 cv2.waitKey(0)
 ~~~
 ## Output:
